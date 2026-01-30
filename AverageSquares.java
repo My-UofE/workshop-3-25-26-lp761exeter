@@ -1,6 +1,6 @@
 import java.util.Scanner; // We use the Scanner class from java.util to handle user input
 
-public class SumSquares {
+public class AverageSquares {
     public static void main(String[] args) {
         
         // Declare Scanner object
@@ -24,12 +24,13 @@ public class SumSquares {
 
         System.out.println("You entered: " + startNum + " and " + endNum);
 
-        int sum = 0;
-        while (startNum<=endNum)
+        double sum = 0;
+        int index = startNum;
+        while (index<=endNum)
         {
-            sum+=startNum*startNum;
-            startNum++;
+            sum+=index*index;
+            index++;
         }
-        System.out.println(sum);
+        System.out.println(sum/(endNum-startNum+1));
     }
 }
